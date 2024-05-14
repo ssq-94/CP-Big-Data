@@ -1,0 +1,20 @@
+{
+	"name": "ds_users",
+	"properties": {
+		"description": "A dataset represents the Users tables on RDS Postgres DB.",
+		"linkedServiceName": {
+			"referenceName": "ls_rds_pg",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "wcd-bd-project-datasts"
+		},
+		"annotations": [],
+		"type": "PostgreSqlV2Table",
+		"schema": [],
+		"typeProperties": {
+			"schema": "raw_st",
+			"table": "users"
+		}
+	}
+}

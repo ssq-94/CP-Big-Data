@@ -1,0 +1,24 @@
+{
+	"name": "ds_archive",
+	"properties": {
+		"description": "Store data before being deleted. ",
+		"linkedServiceName": {
+			"referenceName": "ls_my_blob",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "wcd-bd-project-datasts"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "archive",
+				"container": "bd-project"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
